@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Klik Meteor — Mini Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">MINI GAME • ALVIN LAB</p>
+      <h1>Klik Meteor</h1>
+      <p class="subtitle">Klik meteor sebanyak mungkin dalam 20 detik.</p>
+    </section>
+    <section class="hud" aria-label="Status permainan">
+      <div><span>Skor</span><strong id="score">0</strong></div>
+      <div><span>Waktu</span><strong><span id="time">20</span>s</strong></div>
+      <button id="startButton" class="primary">Mulai Game</button>
+    </section>
+    <section id="arena" class="arena" aria-label="Arena permainan">
+      <div id="meteor" class="meteor" role="button" aria-label="Meteor" tabindex="0">☄</div>
+      <div id="message" class="message">Tekan “Mulai Game” untuk bermain</div>
+    </section>
+    <section class="leaderboard-card">
+      <div class="section-heading">
+        <div><p class="eyebrow">LEADERBOARD</p><h2>Skor terbaik</h2></div>
+        <span id="connectionStatus" class="status">Mode lokal</span>
+      </div>
+      <ol id="leaderboard" class="leaderboard"><li>Belum ada skor.</li></ol>
+    </section>
+    <footer>© 2026 Klik Meteor • Dibuat dengan HTML, CSS, JavaScript, dan Supabase</footer>
+  </main>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
